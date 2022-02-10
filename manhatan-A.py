@@ -13,7 +13,7 @@ class state:
     def get_path_cost(self):
         if self.parent == None:
             return 0
-        return 0.5 + self.parent.get_path_cost()
+        return 0.7 + self.parent.get_path_cost()
     
     def set_parent(self, new_parent):
         self.parent = new_parent
@@ -61,7 +61,8 @@ def manhatan_distance(value1: str, value2: str):
     dist: int = 0
     for x in range(9):
         char: str = value1[x]
-        dist += abs(x - value2.find(char))
+        dif: int = abs(x - value2.find(char))
+        dist += dif // 3 + dif % 3
     return dist
 
 if __name__ == '__main__':
