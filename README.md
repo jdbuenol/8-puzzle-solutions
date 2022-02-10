@@ -1,4 +1,4 @@
-# 8-Star puzzle solutions
+# 8-puzzle search algoriths solutions
 
 This project consists of an agorithm collection, these algorithms are solutions to the 8-puzzle game found in https://murhafsousli.github.io/8puzzle/#/
 
